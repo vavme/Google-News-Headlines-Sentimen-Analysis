@@ -10,7 +10,9 @@ Overview
 Data, that is used, contains list of Google News Headlines from Januari 2010 until June 2021. <br/>
 Data is collected using Web Scraping technique on Investing.com. <br/>
 Web Scraping is done by collecting sentences on tag class='title' and class='date' from the HTML structure.<br/>
-![image](https://user-images.githubusercontent.com/67742339/144521808-f54fe61e-a4c4-4e25-9aa9-8427811ea83d.png) <br/>
+
+![image](https://user-images.githubusercontent.com/67742339/144521808-f54fe61e-a4c4-4e25-9aa9-8427811ea83d.png)
+
 <h3>Preprocessing Data :</h3>
 
 * Case Folding
@@ -41,23 +43,37 @@ The graph shows that there are imbalanced classes in data training. Therefore, R
 * output_dim = 16 and 32
 
 <h3>Parameters that is used in data modelling</h3>
+
 ![image](https://user-images.githubusercontent.com/67742339/144522936-c4019c2e-676f-470e-a18a-dcb69b6c8298.png)
-</br> *For Stacked LSTM and Stacked BiLSTM
+
+*For Stacked LSTM and Stacked BiLSTM
 </br>
 
 <h3>Overall Model's Perfomance</h3>
+
 ![image](https://user-images.githubusercontent.com/67742339/144523267-6ff6ae91-51f6-48ad-84e8-50df91da9657.png)
+
 </br>
+
 ![image](https://user-images.githubusercontent.com/67742339/144523271-0f0ea06a-daac-4661-8093-57546974d155.png)
+
 </br>
 <h3>Applying Dropout</h3>
+
 ![image](https://user-images.githubusercontent.com/67742339/144523282-56c094d6-977c-4030-a9d5-732422a2cf8f.png)
+
 <h3>The Best Model</h3>
+
 ![image](https://user-images.githubusercontent.com/67742339/144523288-c38ab392-ed4c-4478-9dda-3a52ed658af0.png)
+
 </br>
 It can be seen from the table above that model Stacked_BiLSTM_5_Bal has the highest F1-Score Micro, Macro and Weighted. Thus, it can be concluded that it is the best model for classifying Google News Headlines Sentiment data. Confusion Matrix, based on data test, of the best model is shown below. </br>
+
 ![image](https://user-images.githubusercontent.com/67742339/144523477-4f5ad5d7-b550-49ee-9a21-5ae9e20b28f5.png)
+
 <br/>
 Model's architecture is shown below : <br/>
+
 ![image](https://user-images.githubusercontent.com/67742339/144523410-bde7d7a0-5464-4a3b-b54c-fa5dbd335282.png)
-<br/>
+
+
